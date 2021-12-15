@@ -1,0 +1,89 @@
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++                                                                 ++                           December 15, 2021                   ++                                                                 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+The IP address of the FW is:= 172.16.30.3
+Lets get the API key from the FW 
+HA enabled yes/no? = yes
+HA enabled yes/no? = yes
+HA enabled yes/no? = yes
+the state of the HA is:= passive
+The ip address for primary FW and passive is:= ['172.16.30.2', '172.16.30.3']
+The Delete_SSH_Config was successful
+Set_SSH_aes256_ctr_Request was successful
+Set_SSH_aes256_gcm_Request was successful
+Set_Default_Host_Key was successful
+SSH_hmac_sha2_256 was successful
+SSH_hmac_sha2_512 was successful
+The job ID is:= 129
+Commit Configuration was successful
+Let's restrt the SSH service
+Restart SSH service was successful
+The Active FW IP is:= 172.16.30.2
+The Passive FW IP is:= 172.16.30.3
+<?xml version="1.0" ?>
+<response status="success" code="19">
+	<msg>
+		<line>HA synchronization job has been queued on peer. Please check job status on peer.</line>
+	</msg>
+</response>
+Passive FW is synced with Active
+Let's restrt the SSH service
+Restart SSH service on passive FW was successful
+###################################################
+The IP address of the FW is:= 192.168.1.1
+Lets get the API key from the FW 
+HA enabled yes/no? = no
+The FW @:= 192.168.1.1Is in standalone mode
+The Delete_SSH_Config was successful
+Set_SSH_aes256_ctr_Request was successful
+Set_SSH_aes256_gcm_Request was successful
+Set_Default_Host_Key was successful
+SSH_hmac_sha2_256 was successful
+SSH_hmac_sha2_512 was successful
+The job ID is:= 32830
+Commit Configuration was successful
+Let's restrt the SSH service
+Restart SSH service was successful
+###################################################
+The IP address of the FW is:= 172.16.30.3
+Lets get the API key from the FW 
+HA enabled yes/no? = yes
+HA enabled yes/no? = yes
+HA enabled yes/no? = yes
+the state of the HA is:= passive
+The ip address for primary FW and passive is:= ['172.16.30.2', '172.16.30.3']
+ we have previously configured those firewall(s) 172.16.30.3
+###################################################
+The IP address of the FW is:= 172.16.30.2
+Lets get the API key from the FW 
+HA enabled yes/no? = yes
+HA enabled yes/no? = yes
+HA enabled yes/no? = yes
+the state of the HA is:= active
+The ip address for primary FW and passive is:= ['172.16.30.2', '172.16.30.3']
+ we have previously configured those firewall(s) 172.16.30.2
+###################################################
+The IP address of the FW is:= 10.193.176.117
+Lets get the API key from the FW 
+The error message is:= HTTPSConnectionPool(host='10.193.176.117', port=443): Max retries exceeded with url: /api (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000015D7340E140>, 'Connection to 10.193.176.117 timed out. (connect timeout=None)'))
+We failed to get an API Key from FW@10.193.176.117
+###################################################
+The IP address of the FW is:= 192.168.1.2
+Lets get the API key from the FW 
+The error message is:= HTTPSConnectionPool(host='192.168.1.2', port=443): Max retries exceeded with url: /api (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000015D7340C310>, 'Connection to 192.168.1.2 timed out. (connect timeout=None)'))
+We failed to get an API Key from FW@192.168.1.2
+###################################################
+The IP address of the FW is:= 172.16.30.5
+Lets get the API key from the FW 
+The error message is:= HTTPSConnectionPool(host='172.16.30.5', port=443): Max retries exceeded with url: /api (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000015D7340E680>, 'Connection to 172.16.30.5 timed out. (connect timeout=None)'))
+We failed to get an API Key from FW@172.16.30.5
+###################################################
+The IP address of the FW is:= 192.168.1.2
+Lets get the API key from the FW 
+The error message is:= HTTPSConnectionPool(host='192.168.1.2', port=443): Max retries exceeded with url: /api (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000015D7340D5A0>, 'Connection to 192.168.1.2 timed out. (connect timeout=None)'))
+We failed to get an API Key from FW@192.168.1.2
+###################################################
+The IP address of the FW is:= 192.168.1.1
+Lets get the API key from the FW 
+HA enabled yes/no? = no
+The FW @:= 192.168.1.1Is in standalone mode
+We have configured this firewall before := 192.168.1.1
+###################################################
