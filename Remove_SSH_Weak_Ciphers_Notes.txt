@@ -18,7 +18,7 @@ password = 'Paloalto!' #FW admin password
 
 4:- The script create a log a file - customer requires to specify the location (line 33)
 
-#PLease provide a location for the log file just replace C:/Users/aemran/Downloads/
+#PLease provide a location for the log file just replace C:/logs/
 
 5:- The script checks if the FW is a standalone or HA and configure accordingly 
 6:- All succesfull/erros operation will be printed on screen as well as in the log file
