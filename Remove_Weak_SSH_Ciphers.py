@@ -29,7 +29,7 @@ warnings.filterwarnings('ignore', message='Unverified HTTPS request')
 user = 'admin' #FW admin user or a user that has API access permissions
 password = 'Paloalto!' #FW admin password
 timestr = time.strftime("%Y%m%d-%H%M%S")
-#PLease provide a location for the log file just replace C:/Users/aemran/Downloads/
+#PLease provide a location for the log file just replace C:/logs/
 Log_File_Name = 'C:/logs/' + 'Log_' + timestr + '.txt'
 Log_File= open(Log_File_Name,'a')#Let's create a log file to record status and troubleshooting
 FW_Done_List=[]
